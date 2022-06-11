@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        project_exmp
+    </title>
+    <body>
+
+        <form action="login.php" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email </label>
+                <input type="email" class="form-control" name="Email" value="<?php echo $_SESSION['Email']; ?>"  aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" value="<?php echo $_SESSION['password'] ?>">
+                </div>
+            
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </body>
+    </html>
+
